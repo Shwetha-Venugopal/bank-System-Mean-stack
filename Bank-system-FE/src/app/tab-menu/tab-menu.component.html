@@ -1,0 +1,14 @@
+<!-- src/app/header/header.component.html -->
+<div class="page-container">
+  <div class="header">
+    <div class="left">
+      Bank System
+    </div>
+    <p-tabMenu [model]="items" class="menu" [routerLink]="items.routerLink"></p-tabMenu>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

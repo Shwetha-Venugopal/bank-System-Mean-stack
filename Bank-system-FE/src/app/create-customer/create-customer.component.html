@@ -1,0 +1,36 @@
+<form [formGroup]="registerForm" class="register-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" formControlName="phone" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" id="accountNumber" formControlName="accountNumber" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="ifscNumber">IFSC Number:</label>
+      <input type="text" id="ifscNumber" formControlName="iifcNumber" class="form-control">
+    </div>
+  
+    <div class="form-group">
+      <label for="accountBalance">Account Balance:</label>
+      <input type="number" id="accountBalance" formControlName="accoutBalance" class="form-control">
+    </div>
+  
+    <button type="submit" class="btn" (click)="saveRegister()">Register</button>
+  </form>
+
+  <p-toast />
+  
